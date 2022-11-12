@@ -1,7 +1,7 @@
-import {bird} from "./game/bird.js";
-import {ffnet} from "./ai/ffnet.js";
-import {pipe} from "./game/pipe.js";
-import {population} from "./game/population.js"
+import {bird} from "./bird.js";
+import {ffnet} from "./ffnet.js";
+import {pipe} from "./pipe.js";
+import {population} from "./population.js"
 
 const _GRAVITY = 900;
 const _TERMINAL_VELOCITY = 400;

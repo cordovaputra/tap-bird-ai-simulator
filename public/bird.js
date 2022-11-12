@@ -1,5 +1,4 @@
-import {ffnet} from "./ai/ffnet.js";
-
+import {ffnet} from "./ffnet.js";
 
 export const bird = (function() {
 
