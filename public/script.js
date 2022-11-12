@@ -122,7 +122,7 @@ class FlappyBirdGame {
     const style = {
       font: "40px Barlow",
       fill: "#FFFFFF",
-      align: "right",
+      align: "left",
       fixedWidth: 150,
       shadow: {
         offsetX: 2,
@@ -345,13 +345,13 @@ class FlappyBirdGame {
       return t + ': ' + s;
     }
 
-    const text1 = 'AI Gen:\n' + 'Score:\n';
+    const text1 = 'AI Gen:\n' + 'Score:\n'  + 'Birds:\n';
     this._statsText1.text = text1;
 
     const text2 = (
         this._populations[0]._generations + '\n' +
-        this._stats.score + '\n');
-        // this._stats.alive + '\n');
+        this._stats.score + '\n' +
+        this._stats.alive + '\n');
     this._statsText2.text = text2;
   }
 }
