@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:500');
+
+body {
+    font-family: Barlow, sans-sarif;
+    background: #f9f9f9;
+    overflow:hidden; 
+    text-align:center;
+    margin:0;
+}
+
+p{
+    text-size: 20px;
+}
+
+a:link {
+    color: deepskyblue;
+    background-color: transparent;
+    text-decoration: none;
+ }
+ a:visited {
+    color: deepskyblue;
+    background-color: transparent;
+    text-decoration: none;
+ }
+ a:active {
+    color: deepskyblue;
+    background-color: transparent;
+ }

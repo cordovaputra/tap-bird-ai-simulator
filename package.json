@@ -1,0 +1,33 @@
+{
+  "name": "tap-bird-ai-simulator",
+  "version": "1.0.0",
+  "description": "WebML Marathon Project - Creating Tap Bird AI game mechanism with JS, HTML and CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cordovaputra/tap-bird-ai-simulator.git"
+  },
+  "keywords": [
+    "Machine",
+    "Learning",
+    "AI",
+    "Javascript",
+    "WebML"
+  ],
+  "author": "Cordova Putra Handri Ansyah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cordovaputra/tap-bird-ai-simulator/issues"
+  },
+  "homepage": "https://github.com/cordovaputra/tap-bird-ai-simulator#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
