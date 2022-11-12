@@ -6,7 +6,7 @@ body {
     overflow:hidden; 
     text-align:center;
     margin:0;
-}
+  }
 
 p{
     text-size: 20px;
@@ -26,3 +26,4 @@ a:link {
     color: deepskyblue;
     background-color: transparent;
  }
+

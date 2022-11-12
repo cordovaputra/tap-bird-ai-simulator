@@ -11,8 +11,8 @@ const _PIPE_SPACING_X = 250;
 const _PIPE_SPACING_Y = 100;
 const _TREADMILL_SPEED = -125;
 
-const _CONFIG_WIDTH = 960;
-const _CONFIG_HEIGHT = 540;
+const _CONFIG_WIDTH = 640;
+const _CONFIG_HEIGHT = 1280;
 const _GROUND_Y = _CONFIG_HEIGHT;
 const _BIRD_POS_X = 50;
 
@@ -120,10 +120,10 @@ class FlappyBirdGame {
     };
 
     const style = {
-      font: "40px Roboto",
+      font: "40px Barlow",
       fill: "#FFFFFF",
       align: "right",
-      fixedWidth: 210,
+      fixedWidth: 150,
       shadow: {
         offsetX: 2,
         offsetY: 2,
@@ -133,7 +133,6 @@ class FlappyBirdGame {
       }
     };
     this._statsText1 = this._scene.add.text(0, 0, '', style);
-
     style.align = 'left';
     this._statsText2 = this._scene.add.text(
         this._statsText1.width + 10, 0, '', style);
@@ -318,7 +317,7 @@ class FlappyBirdGame {
   _GameOver() {
     const text = "GAME OVER";
     const style = {
-      font: "100px Roboto",
+      font: "50px Barlow",
       fill: "#FFFFFF",
       align: "center",
       fixedWidth: _CONFIG_WIDTH,
@@ -343,16 +342,16 @@ class FlappyBirdGame {
 
   _DrawStats() {
     function _Line(t, s) {
-      return t + ': ' + s + '\n';
+      return t + ': ' + s;
     }
 
-    const text1 = 'Generation:\n' + 'Score:\n' + 'Alive:\n';
+    const text1 = 'AI Gen:\n' + 'Score:\n';
     this._statsText1.text = text1;
 
     const text2 = (
         this._populations[0]._generations + '\n' +
-        this._stats.score + '\n' +
-        this._stats.alive + '\n');
+        this._stats.score + '\n');
+        // this._stats.alive + '\n');
     this._statsText2.text = text2;
   }
 }
